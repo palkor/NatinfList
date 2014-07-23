@@ -28,6 +28,7 @@
     [super viewDidLoad];
 
     [self.mySwitch addTarget:self action:@selector(stateChanged:) forControlEvents:UIControlEventValueChanged];
+   
 }
 
 - (void)stateChanged:(UISwitch *) switchState {
