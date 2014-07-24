@@ -45,13 +45,11 @@
     
     if (_valueSwitch == true) {
         self.searchDisplayController.searchBar.placeholder = @"Saisir une ou plusieurs lettres";
-        self.searchDisplayController.searchBar.prompt = @"Recherche par mots clés";
         self.searchDisplayController.searchBar.keyboardType = UIKeyboardTypeDefault;
     } else {
     
      self.searchDisplayController.searchBar.placeholder = @"Saisir un ou plusieurs chiffres";
-     self.searchDisplayController.searchBar.prompt = @"Recherche par NATINF";
-        self.searchDisplayController.searchBar.keyboardType = UIKeyboardTypeNumberPad; }
+     self.searchDisplayController.searchBar.keyboardType = UIKeyboardTypeNumberPad; }
 
 }
 
