@@ -27,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.prompt = [NSString stringWithFormat:@"%@" ,self.natinf.natinfInfractionClass];
+    self.labelNatinf.text = [NSString stringWithFormat:@"%@" ,self.natinf.natinfInfractionClass];
     self.labelQualification.text = self.natinf.libelleInfractionClass;
     self.labelClasse.text = [NSString stringWithFormat:@"%@", self.natinf.classeInfraction];
     self.labelAmende.text = [NSString stringWithFormat:@"%@",self.natinf.montantAmende];

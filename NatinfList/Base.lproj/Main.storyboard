@@ -103,7 +103,7 @@
             </objects>
             <point key="canvasLocation" x="457" y="845"/>
         </scene>
-        <!--Natinf Detail View Controller - Detail Infraction-->
+        <!--Natinf Detail View Controller - Infraction-->
         <scene sceneID="8pZ-hf-v24">
             <objects>
                 <viewController id="Tc0-Wq-sX4" customClass="NatinfDetailViewController" sceneMemberID="viewController">
@@ -207,12 +207,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Detail Infraction" id="VV2-G3-ThW"/>
+                    <navigationItem key="navigationItem" title="Infraction" id="VV2-G3-ThW"/>
                     <connections>
                         <outlet property="labelAmende" destination="SLo-FH-B80" id="qYP-4o-mhj"/>
                         <outlet property="labelAmendeMaj" destination="MUg-LI-ihw" id="USm-uL-tRQ"/>
                         <outlet property="labelAmendeMin" destination="xtK-dr-KUK" id="tZF-dV-L4S"/>
                         <outlet property="labelClasse" destination="q7y-8H-RVx" id="ooh-1k-FDu"/>
+                        <outlet property="labelNatinf" destination="exS-kh-VsG" id="cmy-pq-IsJ"/>
                         <outlet property="labelPoint" destination="o59-t1-zBF" id="9yj-rE-oHK"/>
                         <outlet property="labelQualification" destination="91A-YJ-uQf" id="n5M-e1-0wr"/>
                         <outlet property="searchDisplayController" destination="bbg-Wo-j3P" id="k9o-W7-dBc"/>
