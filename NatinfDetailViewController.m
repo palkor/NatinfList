@@ -27,6 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+   
     self.labelNatinf.text = [NSString stringWithFormat:@"%@" ,self.natinf.natinfInfractionClass];
     self.labelQualification.text = self.natinf.libelleInfractionClass;
     self.labelClasse.text = [NSString stringWithFormat:@"%@", self.natinf.classeInfraction];
@@ -34,6 +35,7 @@
     self.labelAmendeMin.text = [NSString stringWithFormat:@"%@", self.natinf.montantMinore];
     self.labelAmendeMaj.text = [NSString stringWithFormat:@"%@", self.natinf.montantMajore];
     self.labelPoint.text = [NSString stringWithFormat:@"%@", self.natinf.retraitPoint];
+   
 }
 
 - (void)didReceiveMemoryWarning
