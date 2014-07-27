@@ -30,6 +30,7 @@
 		18F0FAED1979835100E6E7FA /* NatinfListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F0FAEC1979835100E6E7FA /* NatinfListTests.m */; };
 		18F0FAF7197993CF00E6E7FA /* Folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F0FAF6197993CF00E6E7FA /* Folder.png */; };
 		18F0FAF9197993FE00E6E7FA /* License.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F0FAF8197993FE00E6E7FA /* License.png */; };
+		506D02051985994600387F4B /* AproposViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506D02041985994600387F4B /* AproposViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		18F0FAEC1979835100E6E7FA /* NatinfListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NatinfListTests.m; sourceTree = "<group>"; };
 		18F0FAF6197993CF00E6E7FA /* Folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Folder.png; sourceTree = "<group>"; };
 		18F0FAF8197993FE00E6E7FA /* License.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = License.png; sourceTree = "<group>"; };
+		506D02031985994600387F4B /* AproposViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AproposViewController.h; sourceTree = "<group>"; };
+		506D02041985994600387F4B /* AproposViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AproposViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 				18F0FAD01979835000E6E7FA /* AppDelegate.h */,
 				18F0FAD11979835000E6E7FA /* AppDelegate.m */,
 				18F0FAD31979835000E6E7FA /* Main.storyboard */,
+				506D02031985994600387F4B /* AproposViewController.h */,
+				506D02041985994600387F4B /* AproposViewController.m */,
 				18C50926197DAD0300D13D2F /* NatinfParametreViewController.h */,
 				18C50927197DAD0300D13D2F /* NatinfParametreViewController.m */,
 				18C7BFBB1979CEF900CA2A42 /* NatinfTableViewController.h */,
@@ -301,23 +306,6 @@
 		};
 /* End PBXShellScriptBuildPhase section */
 
-
-/* Begin PBXShellScriptBuildPhase section */
-		50524F424C454D533F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export CODESIGN_ALLOCATE=/Library/JailCoder/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n/Library/JailCoder/Entitlements/Entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		18F0FABA1979835000E6E7FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -328,6 +316,7 @@
 				18F0FAD21979835000E6E7FA /* AppDelegate.m in Sources */,
 				18C50928197DAD0300D13D2F /* NatinfParametreViewController.m in Sources */,
 				18F0FACE1979835000E6E7FA /* main.m in Sources */,
+				506D02051985994600387F4B /* AproposViewController.m in Sources */,
 				18C7BFBD1979CEF900CA2A42 /* NatinfTableViewController.m in Sources */,
 				185F0EDC197C1A4900A8652C /* NatinfDetailViewController.m in Sources */,
 			);

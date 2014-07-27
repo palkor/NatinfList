@@ -36,6 +36,7 @@
     self.labelAmendeMaj.text = [NSString stringWithFormat:@"%@", self.natinf.montantMajore];
     self.labelPoint.text = [NSString stringWithFormat:@"%@", self.natinf.retraitPoint];
    
+   
 }
 
 - (void)didReceiveMemoryWarning
