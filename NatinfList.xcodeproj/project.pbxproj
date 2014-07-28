@@ -30,6 +30,7 @@
 		18F0FAED1979835100E6E7FA /* NatinfListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F0FAEC1979835100E6E7FA /* NatinfListTests.m */; };
 		18F0FAF7197993CF00E6E7FA /* Folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F0FAF6197993CF00E6E7FA /* Folder.png */; };
 		18F0FAF9197993FE00E6E7FA /* License.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F0FAF8197993FE00E6E7FA /* License.png */; };
+		504C31B219866C2900117918 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504C31B119866C2900117918 /* MessageUI.framework */; };
 		506D02051985994600387F4B /* AproposViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506D02041985994600387F4B /* AproposViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		18F0FAEC1979835100E6E7FA /* NatinfListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NatinfListTests.m; sourceTree = "<group>"; };
 		18F0FAF6197993CF00E6E7FA /* Folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Folder.png; sourceTree = "<group>"; };
 		18F0FAF8197993FE00E6E7FA /* License.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = License.png; sourceTree = "<group>"; };
+		504C31B119866C2900117918 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		506D02031985994600387F4B /* AproposViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AproposViewController.h; sourceTree = "<group>"; };
 		506D02041985994600387F4B /* AproposViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AproposViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504C31B219866C2900117918 /* MessageUI.framework in Frameworks */,
 				18F0FAC41979835000E6E7FA /* CoreGraphics.framework in Frameworks */,
 				18F0FAC61979835000E6E7FA /* UIKit.framework in Frameworks */,
 				18F0FAC21979835000E6E7FA /* Foundation.framework in Frameworks */,
@@ -126,6 +129,7 @@
 		18F0FAC01979835000E6E7FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				504C31B119866C2900117918 /* MessageUI.framework */,
 				18F0FAC11979835000E6E7FA /* Foundation.framework */,
 				18F0FAC31979835000E6E7FA /* CoreGraphics.framework */,
 				18F0FAC51979835000E6E7FA /* UIKit.framework */,

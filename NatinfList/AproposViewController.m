@@ -57,5 +57,28 @@
     [mc setSubject:emailTitre];
     [mc setMessageBody:messageBody isHTML:NO];
     [mc setToRecipients:destinataires];
+    
+    [self presentViewController:mc animated:YES completion:NULL];
+}
+
+-(void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
+    
+    switch (result) {
+        case MFMailComposeResultCancelled:
+            NSLog(@"Email annulé");
+            break;
+        case MFMailComposeResultSaved:
+            NSLog(@"Email sauvegardé");
+        case MFMailComposeResultSent:
+            NSLog(@"Email envoyé");
+        case MFMailComposeResultFailed:
+            NSLog(@"Erreur lors de l'envoi");
+        default:
+            break;
+    }
+    
+     [self dismissViewControllerAnimated:YES completion:NULL];
+    
+    
 }
 @end
