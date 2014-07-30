@@ -35,6 +35,28 @@
     self.labelAmendeMin.text = [NSString stringWithFormat:@"%@", self.natinf.montantMinore];
     self.labelAmendeMaj.text = [NSString stringWithFormat:@"%@", self.natinf.montantMajore];
     self.labelPoint.text = [NSString stringWithFormat:@"%@", self.natinf.retraitPoint];
+    
+   
+    _labelQualification.layer.borderColor = [UIColor blueColor].CGColor;
+    _labelQualification.layer.borderWidth = 1.0;
+    
+    _labelClasse.layer.borderColor = [UIColor blueColor].CGColor;
+    _labelClasse.layer.borderWidth = 1.0;
+    
+    _labelAmende.layer.borderColor = [UIColor blueColor].CGColor;
+    _labelAmende.layer.borderWidth = 1.0;
+    
+    _labelAmendeMaj.layer.borderColor = [UIColor blueColor].CGColor;
+    _labelAmendeMaj.layer.borderWidth = 1.0;
+    
+    _labelAmendeMaj.layer.borderColor = [UIColor blueColor].CGColor;
+    _labelAmendeMaj.layer.borderWidth = 1.0;
+    
+    _labelNatinf.layer.borderColor = [UIColor redColor].CGColor;
+    _labelNatinf.layer.borderWidth = 1.0;
+    
+    _labelPoint.layer.borderColor = [UIColor blueColor].CGColor;
+    _labelPoint.layer.borderWidth = 1.0;
    
    
 }

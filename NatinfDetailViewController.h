@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelPoint;
 @property (weak, nonatomic) IBOutlet UILabel *labelNatinf;
 
+
 @property (nonatomic, strong) NatinfClass *natinf;
 
 @end

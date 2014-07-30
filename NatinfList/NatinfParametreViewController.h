@@ -11,5 +11,6 @@
 @interface NatinfParametreViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UISwitch *mySwitch;
+@property (weak, nonatomic) IBOutlet UILabel *labelCadre;
 
 @end

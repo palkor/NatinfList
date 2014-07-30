@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
+#import "GSBorderLabel.h"
+
 
 @interface AproposViewController : UIViewController <MFMailComposeViewControllerDelegate>
 - (IBAction)sendMail:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *labelApropos;
 
 @end

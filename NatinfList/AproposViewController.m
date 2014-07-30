@@ -7,6 +7,7 @@
 //
 
 #import "AproposViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 
 @interface AproposViewController ()
@@ -27,7 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    _labelApropos.layer.borderColor = [UIColor blueColor].CGColor;
+    _labelApropos.layer.borderWidth = 3.0;
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,38 +49,87 @@
 }
 */
 
+
 - (IBAction)sendMail:(id)sender {
-    NSString *emailTitre = @"test email";
-    NSString *messageBody = @"Ceci est un essai de message";
+    if ([MFMailComposeViewController canSendMail]) {
+        
+    
+    
+    
+    NSString *emailTitre = @"Commentaire sur l'application NatinfList";
+    NSString *messageBody = @"Mettre ici votre commentaire sur l'application";
     NSArray *destinataires = [NSArray arrayWithObject:@"palkor@hotmail.fr"];
     
     MFMailComposeViewController *mc = [[MFMailComposeViewController alloc]init];
     mc.mailComposeDelegate = self;
+    [mc.navigationBar setTintColor:[UIColor whiteColor]];
+    
     [mc setSubject:emailTitre];
     [mc setMessageBody:messageBody isHTML:NO];
     [mc setToRecipients:destinataires];
     
     [self presentViewController:mc animated:YES completion:NULL];
+    } else {
+       
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Erreur"
+                                                        message:@"Votre appareil ne supporte pas l'envoi de mail"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles: nil];
+        [alert show];
+        
+        
+        }
+
+
 }
 
 -(void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
-    
+    int message = 0;
     switch (result) {
         case MFMailComposeResultCancelled:
-            NSLog(@"Email annulé");
+            message = 1;
             break;
         case MFMailComposeResultSaved:
-            NSLog(@"Email sauvegardé");
+            message = 2;
+            break;
         case MFMailComposeResultSent:
-            NSLog(@"Email envoyé");
+            message = 3;
+            break;
         case MFMailComposeResultFailed:
-            NSLog(@"Erreur lors de l'envoi");
+            message = 4;
+            break;
+        default:
+            break;
+    }
+   
+    
+    [self dismissViewControllerAnimated:YES completion:NULL];
+    
+    NSString *messageInformation = nil;
+    switch (message) {
+        case 1:
+            messageInformation = @"L'envoi a été annulé";
+            break;
+        case 2:
+            messageInformation = @"Le message a été sauvegardé";
+            break;
+        case 3:
+            messageInformation = @"Message envoyé";
+            break;
+        case 4:
+            break;
+            messageInformation = @"Une erreur est survenue lors de l'envoi";
         default:
             break;
     }
     
-     [self dismissViewControllerAnimated:YES completion:NULL];
-    
+    UIAlertView *messageAlert = [[UIAlertView alloc]initWithTitle:@"Envoi message" message:messageInformation delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [messageAlert show];
     
 }
+
+// Custom Label
+
+
 @end
