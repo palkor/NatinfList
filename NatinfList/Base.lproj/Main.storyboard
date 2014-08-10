@@ -36,10 +36,10 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="266" translatesAutoresizingMaskIntoConstraints="NO" id="bL1-0R-Pul" customClass="SNBorderLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="266" translatesAutoresizingMaskIntoConstraints="NO" id="bL1-0R-Pul">
                                 <rect key="frame" x="34" y="97" width="266" height="163"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">NATINFLIST  permet de faire des recherches  au sein du référentiel  des infractions de l'application PVe.                Créée par Ormancey Pascal.     </string>
+                                <string key="text">NATINFLIST  permet de faire des recherches  au sein du référentiel  des infractions de l'application PVe.                Créée par Ormancey Pascal.  Fichier des infractions en date du     </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -113,7 +113,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTg-U3-kEt">
-                                <rect key="frame" x="15" y="110" width="280" height="213"/>
+                                <rect key="frame" x="27" y="110" width="268" height="213"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -163,6 +163,9 @@
                     <connections>
                         <outlet property="labelCadre" destination="MTg-U3-kEt" id="bfo-Kp-r0Z"/>
                         <outlet property="mySwitch" destination="8Px-Ee-AgT" id="meU-j2-DlK"/>
+                        <outlet property="switchAutres" destination="GjG-ge-yCU" id="izY-wa-owg"/>
+                        <outlet property="switchStationnement" destination="CE7-yb-BdF" id="nxU-8a-CRD"/>
+                        <outlet property="switchVitesse" destination="bex-6m-wNF" id="fsJ-Tz-5wf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="25D-2b-zSg" userLabel="First Responder" sceneMemberID="firstResponder"/>

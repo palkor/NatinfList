@@ -12,5 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UISwitch *mySwitch;
 @property (weak, nonatomic) IBOutlet UILabel *labelCadre;
+@property (weak, nonatomic) IBOutlet UISwitch *switchVitesse;
+@property (weak, nonatomic) IBOutlet UISwitch *switchStationnement;
 
+@property (weak, nonatomic) IBOutlet UISwitch *switchAutres;
 @end

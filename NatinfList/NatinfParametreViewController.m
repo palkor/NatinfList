@@ -10,9 +10,15 @@
 
 @interface NatinfParametreViewController ()
 
+
 @end
 
-@implementation NatinfParametreViewController
+@implementation NatinfParametreViewController {
+    
+    NSUserDefaults *prefs;
+    
+}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,27 +33,104 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
+    
+    prefs = [NSUserDefaults standardUserDefaults];
+    
+    if ([prefs boolForKey:@"modeRecherche"]) {
+        [_mySwitch setOn:YES];
+    } else {
+        [_mySwitch setOn:NO];
+    }
+    
+    if ([prefs boolForKey:@"vitesse"]) {
+        [_switchVitesse setOn:YES];
+    }else {
+        [_switchVitesse setOn:NO];
+    }
+    
+    if ([prefs boolForKey:@"stationnement"]) {
+        [_switchStationnement setOn:YES];
+    } else {
+        [_switchStationnement setOn:NO];
+    }
+    
+    if ([prefs boolForKey:@"autres"]) {
+        [_switchAutres setOn:YES];
+    } else {
+        [_switchAutres setOn:NO];
+    }
+    
     [self.mySwitch addTarget:self action:@selector(stateChanged:) forControlEvents:UIControlEventValueChanged];
+    [self.switchVitesse addTarget:self action:@selector(stateChanged1:) forControlEvents:UIControlEventValueChanged];
+    [self.switchStationnement addTarget:self action:@selector(stateChanged2:) forControlEvents:UIControlEventValueChanged];
+    [self.switchAutres addTarget:self action:@selector(stateChanged3:) forControlEvents:UIControlEventValueChanged];
+    
     _labelCadre.layer.borderColor = [UIColor blackColor].CGColor;
     _labelCadre.layer.borderWidth = 1.0;
    
 }
 
 - (void)stateChanged:(UISwitch *) switchState {
-    NSUserDefaults *prefs;
+   
     prefs = [NSUserDefaults standardUserDefaults];
-    
     
     if ([switchState isOn]) {
         [prefs setBool:true forKey:@"modeRecherche"];
-        NSLog(@"Le bouton est activé");
+        
+     
     } else {
         [prefs setBool:false forKey:@"modeRecherche"];
-        NSLog(@"Le bouton est désactivé");
+     
     }
     [prefs synchronize];
 }
+
+-(void)stateChanged1:(UISwitch *) switchState {
+    if ([switchState isOn]) {
+    prefs = [NSUserDefaults standardUserDefaults],
+    [prefs setBool:true forKey:@"vitesse"];
+    [prefs setBool:false forKey:@"stationnement"];
+    [prefs setBool:false forKey:@"autres"];
+    [_switchStationnement setOn:NO ];
+    [_switchAutres setOn:NO];
+        
+    }else {
+        [prefs setBool:false forKey:@"vitesse"];
+    }
+    [prefs synchronize];
+}
+
+-(void)stateChanged2:(UISwitch *) switchState {
+    if ([switchState isOn]) {
+        prefs = [NSUserDefaults standardUserDefaults],
+        [prefs setBool:true forKey:@"stationnement"];
+        [prefs setBool:false forKey:@"vitesse"];
+        [prefs setBool:false forKey:@"autres"];
+        [_switchVitesse setOn:NO];
+        [_switchAutres setOn:NO];
+        
+    }else {
+        [prefs setBool:false forKey:@"stationnement"];
+    }
+    [prefs synchronize];
+}
+
+-(void)stateChanged3:(UISwitch *) switchState {
+    if ([switchState isOn]) {
+        prefs = [NSUserDefaults standardUserDefaults],
+        [prefs setBool:true forKey:@"autres"];
+        [prefs setBool:false forKey:@"vitesse"];
+        [prefs setBool:false forKey:@"stationnement"];
+        [_switchVitesse setOn:NO];
+        [_switchStationnement setOn:NO];
+        
+    }else {
+        [prefs setBool:false forKey:@"autres"];
+    }
+    [prefs synchronize];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

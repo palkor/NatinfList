@@ -19,10 +19,11 @@
     
     NSArray *natinfRawArray;
     NSArray *searchResults;
-    NSMutableArray *natinfArray;
+    NSArray *natinfArray;
+    NSMutableArray *natinfArrayAll;
+    int numberSwitch;
     
 }
-
 
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -34,14 +35,23 @@
     return self;
 }
 
--(void)viewDidAppear:(BOOL)animated
+-(void)loadPrefUser
 {
-    [super viewDidAppear:YES];
-
     NSUserDefaults *prefs;
     prefs = [NSUserDefaults standardUserDefaults];
     _valueSwitch = [prefs boolForKey:@"modeRecherche"];
-    NSLog(@"mode recherche %hhd", _valueSwitch);
+    _valueSwitchVitesse = [prefs boolForKey:@"vitesse"];
+     NSLog(@"valeur prefs vitesse %i", _valueSwitchVitesse);
+    _valueSwitchStationnement = [prefs boolForKey:@"stationnement"];
+    _valueSwitchAutres = [prefs boolForKey:@"autres"];
+
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewDidAppear:YES];
+    [self loadPrefUser];
+    
     
     if (_valueSwitch == true) {
         self.searchDisplayController.searchBar.placeholder = @"Saisir une ou plusieurs lettres";
@@ -50,31 +60,90 @@
     
      self.searchDisplayController.searchBar.placeholder = @"Saisir un ou plusieurs chiffres";
      self.searchDisplayController.searchBar.keyboardType = UIKeyboardTypeNumberPad; }
+    
+    numberSwitch = 0;
+    
+    if (_valueSwitchVitesse == true) {
+        numberSwitch = 1;
+    }
+    
+    if (_valueSwitchStationnement == true) {
+        numberSwitch = 2;
 
+    }
+    if (_valueSwitchAutres == true) {
+        numberSwitch =3;
+      
+    }
+    NSLog(@"valeur numbSwitch, %i",numberSwitch);
+    [self stateSwitch:numberSwitch];
+    
+}
+
+-(void)stateSwitch:(int)nmrSwitch
+{
+    switch (numberSwitch) {
+        case 1:{
+            NSPredicate *vitessePredicate = [NSPredicate predicateWithFormat:@"self.categorieInfractionClass == 'Vitesse'"];
+            natinfArray = [natinfArrayAll filteredArrayUsingPredicate:vitessePredicate];
+            NSLog(@"valeur de natinfArray cas 1 %lu", (unsigned long)[natinfArray count]);
+        }
+
+            break;
+        case 2:{
+            NSPredicate *vitessePredicate = [NSPredicate predicateWithFormat:@"self.categorieInfractionClass == 'Stationnement'"];
+            natinfArray = [natinfArrayAll filteredArrayUsingPredicate:vitessePredicate];
+             NSLog(@"valeur de natinfArray cas 2 %lu", (unsigned long)[natinfArray count]);
+        }
+            
+            break;
+            
+        case 3:{
+            NSPredicate *vitessePredicate = [NSPredicate predicateWithFormat:@"self.categorieInfractionClass == 'Autre'"];
+            natinfArray = [natinfArrayAll filteredArrayUsingPredicate:vitessePredicate];
+             NSLog(@"valeur de natinfArray cas 3 %lu", (unsigned long)[natinfArray count]);
+        }
+            break;
+        default:
+            natinfArray = natinfArrayAll;
+             NSLog(@"valeur de natinfArray cas defaut %lu", (unsigned long)[natinfArray count]);
+            break;
+    }
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self loadPrefUser];
     
+   
     // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+     self.clearsSelectionOnViewWillAppear = YES;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    // Set this in every view controller so that the back button displays back instead of the root view controller name
+   
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Retour" style:UIBarButtonItemStylePlain target:nil action:nil];
 
     natinfRawArray = [[NSArray alloc]initWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"natinfdb" ofType:@"plist"]];
-    natinfArray = [[NSMutableArray alloc]initWithCapacity:900];
+    natinfArrayAll = [[NSMutableArray alloc]initWithCapacity:900];
     
     for (NSDictionary *natinfsList in natinfRawArray) {
         NatinfClass *natinfClass = [[NatinfClass alloc]initWithDictionnary:natinfsList];
-        [natinfArray addObject:natinfClass];
-    }
+        [natinfArrayAll addObject:natinfClass];
+           }
     
+       /*
+    if (_valueSwitchVitesse == true) {
+        NSPredicate *vitessePredicate = [NSPredicate predicateWithFormat:@"self.categorieInfractionClass == 'Vitesse'"];
+        natinfArray = [natinfArrayAll filteredArrayUsingPredicate:vitessePredicate];
+        
+    }
+    */
+
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -90,8 +159,9 @@
         return [searchResults count];
     }
     else {
+       
         return [natinfArray count];
-    }
+           }
     
 }
 
@@ -117,6 +187,7 @@
     cell.categorieInfraction.text = natinfClass.categorieInfractionClass;
     
     return cell;
+   
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -133,10 +204,8 @@
     } else {
     
     NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"self.natinfInfractionClass == %d", [searchText intValue]];
-    searchResults = [natinfArray filteredArrayUsingPredicate:resultPredicate];
-        
-       
-     NSLog(@"valeur de prompt %@", self.searchDisplayController.searchBar.prompt);
+        searchResults = [natinfArray filteredArrayUsingPredicate:resultPredicate];
+    
     }
    
 }

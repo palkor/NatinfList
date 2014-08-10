@@ -11,6 +11,11 @@
 @interface NatinfTableViewController : UITableViewController
 
 @property (assign) BOOL valueSwitch;
+@property (assign) BOOL valueSwitchVitesse;
+@property (assign) BOOL valueSwitchStationnement;
+@property (assign) BOOL valueSwitchAutres;
 
+-(void)loadPrefUser;
+-(void)stateSwitch:(int)nmrSwitch;
 
 @end
