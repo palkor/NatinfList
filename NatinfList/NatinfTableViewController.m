@@ -41,15 +41,19 @@
     NSUserDefaults *prefs;
     prefs = [NSUserDefaults standardUserDefaults];
     _valueSwitch = [prefs boolForKey:@"modeRecherche"];
-    NSLog(@"mode recherche %hhd", _valueSwitch);
+    NSLog(@"mode recherche %d", _valueSwitch);
     
     if (_valueSwitch == true) {
+        
+        self.searchDisplayController.searchBar.placeholder = @"Saisir un ou plusieurs chiffres";
+        self.searchDisplayController.searchBar.keyboardType = UIKeyboardTypeNumberPad;
+        
+        } else {
+                
         self.searchDisplayController.searchBar.placeholder = @"Saisir une ou plusieurs lettres";
         self.searchDisplayController.searchBar.keyboardType = UIKeyboardTypeDefault;
-    } else {
-    
-     self.searchDisplayController.searchBar.placeholder = @"Saisir un ou plusieurs chiffres";
-     self.searchDisplayController.searchBar.keyboardType = UIKeyboardTypeNumberPad; }
+
+     }
 
 }
 
@@ -126,17 +130,20 @@
 
 - (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {
-    if (_valueSwitch == true) {
+    if (_valueSwitch == false) {
+        
+       // searchText =@"arrêt";
         NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"self.libelleInfractionClass contains[cd] %@", searchText];
         searchResults = [natinfArray filteredArrayUsingPredicate:resultPredicate];
         
     } else {
+        
+       // searchText = @"203";
     
     NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"self.natinfInfractionClass == %d", [searchText intValue]];
     searchResults = [natinfArray filteredArrayUsingPredicate:resultPredicate];
         
        
-     NSLog(@"valeur de prompt %@", self.searchDisplayController.searchBar.prompt);
     }
    
 }

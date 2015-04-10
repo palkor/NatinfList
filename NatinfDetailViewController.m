@@ -46,8 +46,8 @@
     _labelAmende.layer.borderColor = [UIColor blueColor].CGColor;
     _labelAmende.layer.borderWidth = 1.0;
     
-    _labelAmendeMaj.layer.borderColor = [UIColor blueColor].CGColor;
-    _labelAmendeMaj.layer.borderWidth = 1.0;
+    _labelAmendeMin.layer.borderColor = [UIColor blueColor].CGColor;
+    _labelAmendeMin.layer.borderWidth = 1.0;
     
     _labelAmendeMaj.layer.borderColor = [UIColor blueColor].CGColor;
     _labelAmendeMaj.layer.borderWidth = 1.0;
