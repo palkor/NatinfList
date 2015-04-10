@@ -29,8 +29,8 @@
     [super viewDidLoad];
 
     [self.mySwitch addTarget:self action:@selector(stateChanged:) forControlEvents:UIControlEventValueChanged];
-    _labelCadre.layer.borderColor = [UIColor blackColor].CGColor;
-    _labelCadre.layer.borderWidth = 1.0;
+    _labelCadre.layer.borderColor = [UIColor blueColor].CGColor;
+    _labelCadre.layer.borderWidth = 3.0;
    
 }
 
