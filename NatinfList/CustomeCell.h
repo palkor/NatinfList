@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface CustomeCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *libelleInfraction;
 @property (weak, nonatomic) IBOutlet UILabel *natinfInfraction;

@@ -33,6 +33,7 @@
 		504C31B219866C2900117918 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504C31B119866C2900117918 /* MessageUI.framework */; };
 		505C309E19890296001ACEC5 /* GSBorderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 505C309D19890296001ACEC5 /* GSBorderLabel.m */; };
 		506D02051985994600387F4B /* AproposViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506D02041985994600387F4B /* AproposViewController.m */; };
+		508BEAF91AE7B9C600A8AC26 /* JALabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 508BEAF81AE7B9C600A8AC26 /* JALabel.m */; };
 		50C344B31987BD9C00933737 /* APRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C344B21987BD9C00933737 /* APRoundedButton.m */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,8 @@
 		505C309D19890296001ACEC5 /* GSBorderLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSBorderLabel.m; sourceTree = "<group>"; };
 		506D02031985994600387F4B /* AproposViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AproposViewController.h; sourceTree = "<group>"; };
 		506D02041985994600387F4B /* AproposViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AproposViewController.m; sourceTree = "<group>"; };
+		508BEAF71AE7B9C600A8AC26 /* JALabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALabel.h; sourceTree = "<group>"; };
+		508BEAF81AE7B9C600A8AC26 /* JALabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALabel.m; sourceTree = "<group>"; };
 		50C344B11987BD9C00933737 /* APRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRoundedButton.h; sourceTree = "<group>"; };
 		50C344B21987BD9C00933737 /* APRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRoundedButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,6 +170,7 @@
 		18F0FAC81979835000E6E7FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				508BEAF61AE7B9C600A8AC26 /* JALabel */,
 				505C309C19890296001ACEC5 /* GSBorderLabel.h */,
 				505C309D19890296001ACEC5 /* GSBorderLabel.m */,
 				50C344B11987BD9C00933737 /* APRoundedButton.h */,
@@ -204,6 +208,15 @@
 				18F0FAE91979835100E6E7FA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		508BEAF61AE7B9C600A8AC26 /* JALabel */ = {
+			isa = PBXGroup;
+			children = (
+				508BEAF71AE7B9C600A8AC26 /* JALabel.h */,
+				508BEAF81AE7B9C600A8AC26 /* JALabel.m */,
+			);
+			path = JALabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,23 +333,6 @@
 		};
 /* End PBXShellScriptBuildPhase section */
 
-
-/* Begin PBXShellScriptBuildPhase section */
-		50524F424C454D533F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export CODESIGN_ALLOCATE=/Library/JailCoder/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n/Library/JailCoder/Entitlements/Entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		18F0FABA1979835000E6E7FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -350,6 +346,7 @@
 				50C344B31987BD9C00933737 /* APRoundedButton.m in Sources */,
 				505C309E19890296001ACEC5 /* GSBorderLabel.m in Sources */,
 				506D02051985994600387F4B /* AproposViewController.m in Sources */,
+				508BEAF91AE7B9C600A8AC26 /* JALabel.m in Sources */,
 				18C7BFBD1979CEF900CA2A42 /* NatinfTableViewController.m in Sources */,
 				185F0EDC197C1A4900A8652C /* NatinfDetailViewController.m in Sources */,
 			);

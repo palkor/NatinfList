@@ -115,7 +115,8 @@
     } else {
         natinfClass = [natinfArray objectAtIndex:indexPath.row];
     }
-   
+    
+    cell.libelleInfraction.textAlignment = NSTextAlignmentJustified;
     cell.libelleInfraction.text = natinfClass.libelleInfractionClass;
     cell.natinfInfraction.text = [NSString stringWithFormat:@"%@", natinfClass.natinfInfractionClass];
     cell.categorieInfraction.text = natinfClass.categorieInfractionClass;
