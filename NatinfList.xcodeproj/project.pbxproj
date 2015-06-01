@@ -29,11 +29,15 @@
 		18F0FAED1979835100E6E7FA /* NatinfListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F0FAEC1979835100E6E7FA /* NatinfListTests.m */; };
 		18F0FAF7197993CF00E6E7FA /* Folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F0FAF6197993CF00E6E7FA /* Folder.png */; };
 		18F0FAF9197993FE00E6E7FA /* License.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F0FAF8197993FE00E6E7FA /* License.png */; };
+		504325E81B134CBF001B9464 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 504325E71B134CBF001B9464 /* Entitlements.plist */; };
 		504C31B219866C2900117918 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504C31B119866C2900117918 /* MessageUI.framework */; };
 		505C309E19890296001ACEC5 /* GSBorderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 505C309D19890296001ACEC5 /* GSBorderLabel.m */; };
 		506D02051985994600387F4B /* AproposViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506D02041985994600387F4B /* AproposViewController.m */; };
 		508BEAF91AE7B9C600A8AC26 /* JALabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 508BEAF81AE7B9C600A8AC26 /* JALabel.m */; };
 		50C344B31987BD9C00933737 /* APRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C344B21987BD9C00933737 /* APRoundedButton.m */; };
+		50E1F2B41B17B392008FB78A /* stationnement.gif in Resources */ = {isa = PBXBuildFile; fileRef = 50E1F2B11B17B392008FB78A /* stationnement.gif */; };
+		50E1F2B51B17B392008FB78A /* vitesse.gif in Resources */ = {isa = PBXBuildFile; fileRef = 50E1F2B21B17B392008FB78A /* vitesse.gif */; };
+		50E1F2B61B17B392008FB78A /* autre.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E1F2B31B17B392008FB78A /* autre.png */; };
 		E4582EFE1AF42EFB009D8EA2 /* CustomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4582EFD1AF42EFB009D8EA2 /* CustomeCell.m */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +82,7 @@
 		18F0FAEC1979835100E6E7FA /* NatinfListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NatinfListTests.m; sourceTree = "<group>"; };
 		18F0FAF6197993CF00E6E7FA /* Folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Folder.png; sourceTree = "<group>"; };
 		18F0FAF8197993FE00E6E7FA /* License.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = License.png; sourceTree = "<group>"; };
+		504325E71B134CBF001B9464 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		504C31B119866C2900117918 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		505C309C19890296001ACEC5 /* GSBorderLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSBorderLabel.h; sourceTree = "<group>"; };
 		505C309D19890296001ACEC5 /* GSBorderLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSBorderLabel.m; sourceTree = "<group>"; };
@@ -87,6 +92,9 @@
 		508BEAF81AE7B9C600A8AC26 /* JALabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALabel.m; sourceTree = "<group>"; };
 		50C344B11987BD9C00933737 /* APRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRoundedButton.h; sourceTree = "<group>"; };
 		50C344B21987BD9C00933737 /* APRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRoundedButton.m; sourceTree = "<group>"; };
+		50E1F2B11B17B392008FB78A /* stationnement.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = stationnement.gif; sourceTree = "<group>"; };
+		50E1F2B21B17B392008FB78A /* vitesse.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vitesse.gif; sourceTree = "<group>"; };
+		50E1F2B31B17B392008FB78A /* autre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = autre.png; sourceTree = "<group>"; };
 		E4582EFC1AF42EFB009D8EA2 /* CustomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomeCell.h; path = ../CustomeCell.h; sourceTree = "<group>"; };
 		E4582EFD1AF42EFB009D8EA2 /* CustomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomeCell.m; path = ../CustomeCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +127,7 @@
 		18F0FAB51979835000E6E7FA = {
 			isa = PBXGroup;
 			children = (
+				504325E71B134CBF001B9464 /* Entitlements.plist */,
 				18F0FAC71979835000E6E7FA /* NatinfList */,
 				18F0FAE61979835100E6E7FA /* NatinfListTests */,
 				18F0FAC01979835000E6E7FA /* Frameworks */,
@@ -172,6 +181,9 @@
 		18F0FAC81979835000E6E7FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				50E1F2B11B17B392008FB78A /* stationnement.gif */,
+				50E1F2B21B17B392008FB78A /* vitesse.gif */,
+				50E1F2B31B17B392008FB78A /* autre.png */,
 				508BEAF61AE7B9C600A8AC26 /* JALabel */,
 				505C309C19890296001ACEC5 /* GSBorderLabel.h */,
 				505C309D19890296001ACEC5 /* GSBorderLabel.m */,
@@ -229,7 +241,6 @@
 				18F0FABA1979835000E6E7FA /* Sources */,
 				18F0FABB1979835000E6E7FA /* Frameworks */,
 				18F0FABC1979835000E6E7FA /* Resources */,
-				50524F424C454D533F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -297,12 +308,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F0FAF9197993FE00E6E7FA /* License.png in Resources */,
+				50E1F2B61B17B392008FB78A /* autre.png in Resources */,
+				50E1F2B51B17B392008FB78A /* vitesse.gif in Resources */,
 				18F0FADA1979835000E6E7FA /* Images.xcassets in Resources */,
 				18F0FAF7197993CF00E6E7FA /* Folder.png in Resources */,
+				504325E81B134CBF001B9464 /* Entitlements.plist in Resources */,
 				18F0FACC1979835000E6E7FA /* InfoPlist.strings in Resources */,
 				189E9E44197A6211005BFCD3 /* natinfdb.plist in Resources */,
 				18AB701C197E84010094D7ED /* Gear.png in Resources */,
 				18F0FAD51979835000E6E7FA /* Main.storyboard in Resources */,
+				50E1F2B41B17B392008FB78A /* stationnement.gif in Resources */,
 				18AB701E197E840F0094D7ED /* Gear@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,22 +331,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		50524F424C454D533F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export CODESIGN_ALLOCATE=/Library/JailCoder/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n/Library/JailCoder/Entitlements/Entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18F0FABA1979835000E6E7FA /* Sources */ = {
@@ -414,7 +413,9 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -430,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -452,7 +453,9 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -462,7 +465,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -473,7 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "-";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NatinfList/NatinfList-Prefix.pch";
 				INFOPLIST_FILE = "NatinfList/NatinfList-Info.plist";
@@ -488,7 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "-";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NatinfList/NatinfList-Prefix.pch";
 				INFOPLIST_FILE = "NatinfList/NatinfList-Info.plist";

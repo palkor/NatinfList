@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelAmendeMaj;
 @property (weak, nonatomic) IBOutlet UILabel *labelPoint;
 @property (weak, nonatomic) IBOutlet UILabel *labelNatinf;
+@property (weak, nonatomic) IBOutlet UIImageView *imgView;
 
 
 @property (nonatomic, strong) NatinfClass *natinf;

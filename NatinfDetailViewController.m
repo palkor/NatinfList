@@ -35,7 +35,28 @@
     self.labelAmendeMin.text = [NSString stringWithFormat:@"%@", self.natinf.montantMinore];
     self.labelAmendeMaj.text = [NSString stringWithFormat:@"%@", self.natinf.montantMajore];
     self.labelPoint.text = [NSString stringWithFormat:@"%@", self.natinf.retraitPoint];
+    NSString *categorie = [NSString stringWithFormat:@"%@", self.natinf.categorieInfractionClass];
     
+    if ([categorie  isEqual: @"Stationnement"]) {
+        
+        UIImage *image = [UIImage imageNamed:@"stationnement.gif" inBundle:nil compatibleWithTraitCollection:nil];
+         _imgView.image = image;
+    
+    }
+    else if ([categorie isEqual:@"Autre"]) {
+        
+        UIImage *image = [UIImage imageNamed:@"autre.png" inBundle:nil compatibleWithTraitCollection:nil];
+        _imgView.image = image;
+        
+    }
+    
+    else {
+        
+        UIImage *image = [UIImage imageNamed:@"vitesse.gif" inBundle:nil compatibleWithTraitCollection:nil];
+        _imgView.image = image;
+    }
+    
+   
    
     _labelQualification.layer.borderColor = [UIColor blueColor].CGColor;
     _labelQualification.layer.borderWidth = 1.0;
