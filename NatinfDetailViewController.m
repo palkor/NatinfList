@@ -58,25 +58,25 @@
     
    
    
-    _labelQualification.layer.borderColor = [UIColor blueColor].CGColor;
+    _labelQualification.layer.borderColor = [UIColor colorWithRed:0.024f green:0.478f blue:0.710f alpha:1.00f].CGColor;
     _labelQualification.layer.borderWidth = 1.0;
     
-    _labelClasse.layer.borderColor = [UIColor blueColor].CGColor;
+    _labelClasse.layer.borderColor = [UIColor colorWithRed:0.024f green:0.478f blue:0.710f alpha:1.00f].CGColor;
     _labelClasse.layer.borderWidth = 1.0;
     
-    _labelAmende.layer.borderColor = [UIColor blueColor].CGColor;
+    _labelAmende.layer.borderColor = [UIColor colorWithRed:0.024f green:0.478f blue:0.710f alpha:1.00f].CGColor;
     _labelAmende.layer.borderWidth = 1.0;
     
-    _labelAmendeMin.layer.borderColor = [UIColor blueColor].CGColor;
+    _labelAmendeMin.layer.borderColor = [UIColor colorWithRed:0.024f green:0.478f blue:0.710f alpha:1.00f].CGColor;
     _labelAmendeMin.layer.borderWidth = 1.0;
     
-    _labelAmendeMaj.layer.borderColor = [UIColor blueColor].CGColor;
+    _labelAmendeMaj.layer.borderColor = [UIColor colorWithRed:0.024f green:0.478f blue:0.710f alpha:1.00f].CGColor;
     _labelAmendeMaj.layer.borderWidth = 1.0;
     
     _labelNatinf.layer.borderColor = [UIColor redColor].CGColor;
     _labelNatinf.layer.borderWidth = 1.0;
     
-    _labelPoint.layer.borderColor = [UIColor blueColor].CGColor;
+    _labelPoint.layer.borderColor = [UIColor colorWithRed:0.024f green:0.478f blue:0.710f alpha:1.00f].CGColor;
     _labelPoint.layer.borderWidth = 1.0;
    
    
