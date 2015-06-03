@@ -63,21 +63,21 @@
 		18C7BFB91979C02900CA2A42 /* NatinfClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NatinfClass.m; sourceTree = "<group>"; };
 		18C7BFBB1979CEF900CA2A42 /* NatinfTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NatinfTableViewController.h; sourceTree = "<group>"; };
 		18C7BFBC1979CEF900CA2A42 /* NatinfTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NatinfTableViewController.m; sourceTree = "<group>"; };
-		18F0FABE1979835000E6E7FA /* NatinfList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NatinfList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F0FABE1979835000E6E7FA /* Memento PVe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memento PVe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F0FAC11979835000E6E7FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18F0FAC31979835000E6E7FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		18F0FAC51979835000E6E7FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		18F0FAC91979835000E6E7FA /* NatinfList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NatinfList-Info.plist"; sourceTree = "<group>"; };
+		18F0FAC91979835000E6E7FA /* Memento PVe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Memento PVe-Info.plist"; sourceTree = "<group>"; };
 		18F0FACB1979835000E6E7FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18F0FACD1979835000E6E7FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		18F0FACF1979835000E6E7FA /* NatinfList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NatinfList-Prefix.pch"; sourceTree = "<group>"; };
+		18F0FACF1979835000E6E7FA /* Memento PVe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Memento PVe-Prefix.pch"; sourceTree = "<group>"; };
 		18F0FAD01979835000E6E7FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18F0FAD11979835000E6E7FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18F0FAD41979835000E6E7FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18F0FAD91979835000E6E7FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		18F0FADF1979835100E6E7FA /* NatinfListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NatinfListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F0FADF1979835100E6E7FA /* Memento PVeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Memento PVeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F0FAE01979835100E6E7FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		18F0FAE81979835100E6E7FA /* NatinfListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NatinfListTests-Info.plist"; sourceTree = "<group>"; };
+		18F0FAE81979835100E6E7FA /* Memento PVeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Memento PVeTests-Info.plist"; sourceTree = "<group>"; };
 		18F0FAEA1979835100E6E7FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18F0FAEC1979835100E6E7FA /* NatinfListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NatinfListTests.m; sourceTree = "<group>"; };
 		18F0FAF6197993CF00E6E7FA /* Folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Folder.png; sourceTree = "<group>"; };
@@ -138,8 +138,8 @@
 		18F0FABF1979835000E6E7FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				18F0FABE1979835000E6E7FA /* NatinfList.app */,
-				18F0FADF1979835100E6E7FA /* NatinfListTests.xctest */,
+				18F0FABE1979835000E6E7FA /* Memento PVe.app */,
+				18F0FADF1979835100E6E7FA /* Memento PVeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,10 +194,10 @@
 				189E9E43197A6211005BFCD3 /* natinfdb.plist */,
 				18F0FAF8197993FE00E6E7FA /* License.png */,
 				18F0FAF6197993CF00E6E7FA /* Folder.png */,
-				18F0FAC91979835000E6E7FA /* NatinfList-Info.plist */,
+				18F0FAC91979835000E6E7FA /* Memento PVe-Info.plist */,
 				18F0FACA1979835000E6E7FA /* InfoPlist.strings */,
 				18F0FACD1979835000E6E7FA /* main.m */,
-				18F0FACF1979835000E6E7FA /* NatinfList-Prefix.pch */,
+				18F0FACF1979835000E6E7FA /* Memento PVe-Prefix.pch */,
 				18C7BFB81979C02900CA2A42 /* NatinfClass.h */,
 				18C7BFB91979C02900CA2A42 /* NatinfClass.m */,
 			);
@@ -216,7 +216,7 @@
 		18F0FAE71979835100E6E7FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				18F0FAE81979835100E6E7FA /* NatinfListTests-Info.plist */,
+				18F0FAE81979835100E6E7FA /* Memento PVeTests-Info.plist */,
 				18F0FAE91979835100E6E7FA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -234,9 +234,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		18F0FABD1979835000E6E7FA /* NatinfList */ = {
+		18F0FABD1979835000E6E7FA /* Memento PVe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18F0FAF01979835100E6E7FA /* Build configuration list for PBXNativeTarget "NatinfList" */;
+			buildConfigurationList = 18F0FAF01979835100E6E7FA /* Build configuration list for PBXNativeTarget "Memento PVe" */;
 			buildPhases = (
 				18F0FABA1979835000E6E7FA /* Sources */,
 				18F0FABB1979835000E6E7FA /* Frameworks */,
@@ -246,14 +246,14 @@
 			);
 			dependencies = (
 			);
-			name = NatinfList;
+			name = "Memento PVe";
 			productName = NatinfList;
-			productReference = 18F0FABE1979835000E6E7FA /* NatinfList.app */;
+			productReference = 18F0FABE1979835000E6E7FA /* Memento PVe.app */;
 			productType = "com.apple.product-type.application";
 		};
-		18F0FADE1979835100E6E7FA /* NatinfListTests */ = {
+		18F0FADE1979835100E6E7FA /* Memento PVeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18F0FAF31979835100E6E7FA /* Build configuration list for PBXNativeTarget "NatinfListTests" */;
+			buildConfigurationList = 18F0FAF31979835100E6E7FA /* Build configuration list for PBXNativeTarget "Memento PVeTests" */;
 			buildPhases = (
 				18F0FADB1979835100E6E7FA /* Sources */,
 				18F0FADC1979835100E6E7FA /* Frameworks */,
@@ -264,9 +264,9 @@
 			dependencies = (
 				18F0FAE51979835100E6E7FA /* PBXTargetDependency */,
 			);
-			name = NatinfListTests;
+			name = "Memento PVeTests";
 			productName = NatinfListTests;
-			productReference = 18F0FADF1979835100E6E7FA /* NatinfListTests.xctest */;
+			productReference = 18F0FADF1979835100E6E7FA /* Memento PVeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -283,7 +283,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 18F0FAB91979835000E6E7FA /* Build configuration list for PBXProject "NatinfList" */;
+			buildConfigurationList = 18F0FAB91979835000E6E7FA /* Build configuration list for PBXProject "Memento PVe" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -296,8 +296,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				18F0FABD1979835000E6E7FA /* NatinfList */,
-				18F0FADE1979835100E6E7FA /* NatinfListTests */,
+				18F0FABD1979835000E6E7FA /* Memento PVe */,
+				18F0FADE1979835100E6E7FA /* Memento PVeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -364,7 +364,7 @@
 /* Begin PBXTargetDependency section */
 		18F0FAE51979835100E6E7FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 18F0FABD1979835000E6E7FA /* NatinfList */;
+			target = 18F0FABD1979835000E6E7FA /* Memento PVe */;
 			targetProxy = 18F0FAE41979835100E6E7FA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -478,10 +478,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "-";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NatinfList/NatinfList-Prefix.pch";
-				INFOPLIST_FILE = "NatinfList/NatinfList-Info.plist";
+				GCC_PREFIX_HEADER = "NatinfList/Memento PVe-Prefix.pch";
+				INFOPLIST_FILE = "NatinfList/Memento PVe-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Memento PVe";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -493,10 +493,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "-";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NatinfList/NatinfList-Prefix.pch";
-				INFOPLIST_FILE = "NatinfList/NatinfList-Info.plist";
+				GCC_PREFIX_HEADER = "NatinfList/Memento PVe-Prefix.pch";
+				INFOPLIST_FILE = "NatinfList/Memento PVe-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Memento PVe";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -504,7 +504,7 @@
 		18F0FAF41979835100E6E7FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NatinfList.app/NatinfList";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -516,9 +516,9 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "NatinfListTests/NatinfListTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				INFOPLIST_FILE = "NatinfListTests/Memento PVeTests-Info.plist";
+				PRODUCT_NAME = "Memento PVeTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memento PVe.app/Memento PVe";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -526,7 +526,7 @@
 		18F0FAF51979835100E6E7FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NatinfList.app/NatinfList";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -534,9 +534,9 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NatinfList/NatinfList-Prefix.pch";
-				INFOPLIST_FILE = "NatinfListTests/NatinfListTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				INFOPLIST_FILE = "NatinfListTests/Memento PVeTests-Info.plist";
+				PRODUCT_NAME = "Memento PVeTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memento PVe.app/Memento PVe";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -544,7 +544,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		18F0FAB91979835000E6E7FA /* Build configuration list for PBXProject "NatinfList" */ = {
+		18F0FAB91979835000E6E7FA /* Build configuration list for PBXProject "Memento PVe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18F0FAEE1979835100E6E7FA /* Debug */,
@@ -553,7 +553,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18F0FAF01979835100E6E7FA /* Build configuration list for PBXNativeTarget "NatinfList" */ = {
+		18F0FAF01979835100E6E7FA /* Build configuration list for PBXNativeTarget "Memento PVe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18F0FAF11979835100E6E7FA /* Debug */,
@@ -562,7 +562,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18F0FAF31979835100E6E7FA /* Build configuration list for PBXNativeTarget "NatinfListTests" */ = {
+		18F0FAF31979835100E6E7FA /* Build configuration list for PBXNativeTarget "Memento PVeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18F0FAF41979835100E6E7FA /* Debug */,

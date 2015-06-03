@@ -28,7 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+  
     _labelApropos.layer.borderColor =[UIColor colorWithRed:0.024f green:0.478f blue:0.710f alpha:1.00f].CGColor;
     _labelApropos.layer.borderWidth = 3.0;
 }

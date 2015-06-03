@@ -37,14 +37,14 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="266" translatesAutoresizingMaskIntoConstraints="NO" id="bL1-0R-Pul" customClass="GSBorderLabel">
-                                <rect key="frame" x="34" y="97" width="266" height="163"/>
-                                <string key="text">NATINFLIST  permet de faire des recherches  au sein du référentiel  des infractions de l'application PVe.                Créée par Ormancey Pascal.     </string>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="266" translatesAutoresizingMaskIntoConstraints="NO" id="bL1-0R-Pul">
+                                <rect key="frame" x="27" y="32" width="269" height="239"/>
+                                <string key="text">APPLICATION: Memento PVe permet de rechercher une infraction parmi l'ensemble du référentiel de la base de données de PVe.  RÉALISATION:  Application réalisée par Pascal ORMANCEY.     Pour toutes remarques ou observations merci de me contacter.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNs-g4-J0X" customClass="APRoundedButton">
-                                <rect key="frame" x="69" y="304" width="198" height="37"/>
+                                <rect key="frame" x="74" y="288" width="198" height="37"/>
                                 <color key="backgroundColor" red="0.0" green="0.3921568627" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Contacter le développeur">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -103,7 +103,7 @@
                                 <rect key="frame" x="231" y="158" width="51" height="31"/>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recherche par code NATINF" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NK-UP-jil">
-                                <rect key="frame" x="27" y="163" width="177" height="21"/>
+                                <rect key="frame" x="27" y="163" width="196" height="26"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
