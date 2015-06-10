@@ -19,6 +19,7 @@
                         <segue destination="avf-uP-fEn" kind="relationship" relationship="viewControllers" id="9nj-Fd-UvR"/>
                         <segue destination="sFX-VA-vzf" kind="relationship" relationship="viewControllers" id="ij9-nY-bsx"/>
                         <segue destination="gYg-iy-xb9" kind="relationship" relationship="viewControllers" id="Ha8-4u-g5E"/>
+                        <segue destination="oxl-mP-iu9" kind="relationship" relationship="viewControllers" id="ZRi-1X-yfR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WBf-Fj-XNV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -86,6 +87,106 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BcJ-hP-ZQm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-33" y="849"/>
+        </scene>
+        <!--Calculette-->
+        <scene sceneID="eqK-pg-c3V">
+            <objects>
+                <navigationController id="oxl-mP-iu9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Calculette" image="pen.png" id="ves-4D-VsK"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vss-j7-Dhj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LVT-Vk-KsA" kind="relationship" relationship="rootViewController" id="8t7-Hs-Knd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x1E-fO-NXK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242" y="1526"/>
+        </scene>
+        <!--Calculette-->
+        <scene sceneID="tqd-GZ-3Rx">
+            <objects>
+                <viewController id="LVT-Vk-KsA" customClass="CalculetteViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QxX-YR-0hb"/>
+                        <viewControllerLayoutGuide type="bottom" id="FAF-3i-Eun"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zBE-H8-ADc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vitesse enregistrée" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3r4-z8-VCM">
+                                <rect key="frame" x="16" y="110" width="149" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vitesse retenue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asv-zq-Sgy">
+                                <rect key="frame" x="16" y="182" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Retrait de point" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5R-S7-AAl">
+                                <rect key="frame" x="16" y="248" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jU4-fG-BHd">
+                                <rect key="frame" x="188" y="113" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="changeValeur" destination="LVT-Vk-KsA" eventType="editingChanged" id="M1A-oJ-w7o"/>
+                                    <outlet property="delegate" destination="LVT-Vk-KsA" id="0BE-8a-Bxi"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDz-YO-I4P">
+                                <rect key="frame" x="188" y="178" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOM-3z-Mu1">
+                                <rect key="frame" x="188" y="248" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="30" maxValue="130" translatesAutoresizingMaskIntoConstraints="NO" id="cPg-FA-k72">
+                                <rect key="frame" x="14" y="421" width="273" height="31"/>
+                                <connections>
+                                    <action selector="valueChange:" destination="LVT-Vk-KsA" eventType="valueChanged" id="DHo-tP-otj"/>
+                                </connections>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vitesse.png" translatesAutoresizingMaskIntoConstraints="NO" id="Po6-kW-2vg">
+                                <rect key="frame" x="98" y="290" width="132" height="117"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="130" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vt4-so-Ica">
+                                <rect key="frame" x="130" y="330" width="70" height="37"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Calculette" id="9F1-yX-x2T"/>
+                    <connections>
+                        <outlet property="image" destination="Po6-kW-2vg" id="Kwo-o4-FKh"/>
+                        <outlet property="labelVitesseLimite" destination="Vt4-so-Ica" id="UeH-Pl-sm4"/>
+                        <outlet property="retraitPoint" destination="gOM-3z-Mu1" id="lkd-Fq-Sns"/>
+                        <outlet property="slider" destination="cPg-FA-k72" id="2TJ-8j-FsD"/>
+                        <outlet property="textVitesseEnregistre" destination="jU4-fG-BHd" id="ykn-sQ-B1t"/>
+                        <outlet property="textVitesseRetenu" destination="UDz-YO-I4P" id="V82-gY-YvS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VD2-eG-WZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="201" y="1526"/>
         </scene>
         <!--Réglages-->
         <scene sceneID="ClA-vT-Kb7">
@@ -370,6 +471,8 @@
         <image name="Folder.png" width="30" height="30"/>
         <image name="Gear.png" width="30" height="30"/>
         <image name="License.png" width="30" height="30"/>
+        <image name="pen.png" width="16" height="16"/>
+        <image name="vitesse.png" width="225" height="224"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

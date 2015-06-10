@@ -29,11 +29,15 @@
 		18F0FAED1979835100E6E7FA /* NatinfListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F0FAEC1979835100E6E7FA /* NatinfListTests.m */; };
 		18F0FAF7197993CF00E6E7FA /* Folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F0FAF6197993CF00E6E7FA /* Folder.png */; };
 		18F0FAF9197993FE00E6E7FA /* License.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F0FAF8197993FE00E6E7FA /* License.png */; };
+		50342BFF1B21A962009C9416 /* pen.png in Resources */ = {isa = PBXBuildFile; fileRef = 50342BFE1B21A962009C9416 /* pen.png */; };
+		50342C071B21B1C1009C9416 /* CalculetteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50342C061B21B1C1009C9416 /* CalculetteViewController.m */; };
 		504325E81B134CBF001B9464 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 504325E71B134CBF001B9464 /* Entitlements.plist */; };
 		504C31B219866C2900117918 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504C31B119866C2900117918 /* MessageUI.framework */; };
 		505C309E19890296001ACEC5 /* GSBorderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 505C309D19890296001ACEC5 /* GSBorderLabel.m */; };
 		506D02051985994600387F4B /* AproposViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506D02041985994600387F4B /* AproposViewController.m */; };
+		507FC86B1B24EFCF00768BD6 /* vitesse.png in Resources */ = {isa = PBXBuildFile; fileRef = 507FC86A1B24EFCF00768BD6 /* vitesse.png */; };
 		508BEAF91AE7B9C600A8AC26 /* JALabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 508BEAF81AE7B9C600A8AC26 /* JALabel.m */; };
+		508CBDC31B25CA8400F19C74 /* slider_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 508CBDC21B25CA8400F19C74 /* slider_tab.png */; };
 		50C344B31987BD9C00933737 /* APRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C344B21987BD9C00933737 /* APRoundedButton.m */; };
 		50E1F2B41B17B392008FB78A /* stationnement.gif in Resources */ = {isa = PBXBuildFile; fileRef = 50E1F2B11B17B392008FB78A /* stationnement.gif */; };
 		50E1F2B51B17B392008FB78A /* vitesse.gif in Resources */ = {isa = PBXBuildFile; fileRef = 50E1F2B21B17B392008FB78A /* vitesse.gif */; };
@@ -82,14 +86,19 @@
 		18F0FAEC1979835100E6E7FA /* NatinfListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NatinfListTests.m; sourceTree = "<group>"; };
 		18F0FAF6197993CF00E6E7FA /* Folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Folder.png; sourceTree = "<group>"; };
 		18F0FAF8197993FE00E6E7FA /* License.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = License.png; sourceTree = "<group>"; };
+		50342BFE1B21A962009C9416 /* pen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pen.png; sourceTree = "<group>"; };
+		50342C051B21B1C1009C9416 /* CalculetteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculetteViewController.h; sourceTree = "<group>"; };
+		50342C061B21B1C1009C9416 /* CalculetteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculetteViewController.m; sourceTree = "<group>"; };
 		504325E71B134CBF001B9464 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		504C31B119866C2900117918 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		505C309C19890296001ACEC5 /* GSBorderLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSBorderLabel.h; sourceTree = "<group>"; };
 		505C309D19890296001ACEC5 /* GSBorderLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSBorderLabel.m; sourceTree = "<group>"; };
 		506D02031985994600387F4B /* AproposViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AproposViewController.h; sourceTree = "<group>"; };
 		506D02041985994600387F4B /* AproposViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AproposViewController.m; sourceTree = "<group>"; };
+		507FC86A1B24EFCF00768BD6 /* vitesse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vitesse.png; sourceTree = "<group>"; };
 		508BEAF71AE7B9C600A8AC26 /* JALabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALabel.h; sourceTree = "<group>"; };
 		508BEAF81AE7B9C600A8AC26 /* JALabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALabel.m; sourceTree = "<group>"; };
+		508CBDC21B25CA8400F19C74 /* slider_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slider_tab.png; sourceTree = "<group>"; };
 		50C344B11987BD9C00933737 /* APRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRoundedButton.h; sourceTree = "<group>"; };
 		50C344B21987BD9C00933737 /* APRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRoundedButton.m; sourceTree = "<group>"; };
 		50E1F2B11B17B392008FB78A /* stationnement.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = stationnement.gif; sourceTree = "<group>"; };
@@ -159,6 +168,8 @@
 		18F0FAC71979835000E6E7FA /* NatinfList */ = {
 			isa = PBXGroup;
 			children = (
+				50342C051B21B1C1009C9416 /* CalculetteViewController.h */,
+				50342C061B21B1C1009C9416 /* CalculetteViewController.m */,
 				185F0EDA197C1A4900A8652C /* NatinfDetailViewController.h */,
 				185F0EDB197C1A4900A8652C /* NatinfDetailViewController.m */,
 				18F0FAD01979835000E6E7FA /* AppDelegate.h */,
@@ -181,6 +192,9 @@
 		18F0FAC81979835000E6E7FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				507FC86A1B24EFCF00768BD6 /* vitesse.png */,
+				508CBDC21B25CA8400F19C74 /* slider_tab.png */,
+				50342BFE1B21A962009C9416 /* pen.png */,
 				50E1F2B11B17B392008FB78A /* stationnement.gif */,
 				50E1F2B21B17B392008FB78A /* vitesse.gif */,
 				50E1F2B31B17B392008FB78A /* autre.png */,
@@ -308,7 +322,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F0FAF9197993FE00E6E7FA /* License.png in Resources */,
+				508CBDC31B25CA8400F19C74 /* slider_tab.png in Resources */,
+				507FC86B1B24EFCF00768BD6 /* vitesse.png in Resources */,
 				50E1F2B61B17B392008FB78A /* autre.png in Resources */,
+				50342BFF1B21A962009C9416 /* pen.png in Resources */,
 				50E1F2B51B17B392008FB78A /* vitesse.gif in Resources */,
 				18F0FADA1979835000E6E7FA /* Images.xcassets in Resources */,
 				18F0FAF7197993CF00E6E7FA /* Folder.png in Resources */,
@@ -347,6 +364,7 @@
 				506D02051985994600387F4B /* AproposViewController.m in Sources */,
 				508BEAF91AE7B9C600A8AC26 /* JALabel.m in Sources */,
 				18C7BFBD1979CEF900CA2A42 /* NatinfTableViewController.m in Sources */,
+				50342C071B21B1C1009C9416 /* CalculetteViewController.m in Sources */,
 				185F0EDC197C1A4900A8652C /* NatinfDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
