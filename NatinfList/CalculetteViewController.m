@@ -5,6 +5,7 @@
 //  Created by Pascal Ormancey on 05/06/2015.
 //  Copyright (c) 2015 Pascal. All rights reserved.
 //
+// Calculette radar
 
 #import "CalculetteViewController.h"
 

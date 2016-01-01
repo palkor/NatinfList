@@ -289,7 +289,7 @@
 		18F0FAB61979835000E6E7FA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Pascal;
 				TargetAttributes = {
 					18F0FADE1979835100E6E7FA = {
@@ -435,6 +435,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -499,6 +500,7 @@
 				GCC_PREFIX_HEADER = "NatinfList/Memento PVe-Prefix.pch";
 				INFOPLIST_FILE = "NatinfList/Memento PVe-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.palko.tk.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Memento PVe";
 				WRAPPER_EXTENSION = app;
 			};
@@ -514,6 +516,7 @@
 				GCC_PREFIX_HEADER = "NatinfList/Memento PVe-Prefix.pch";
 				INFOPLIST_FILE = "NatinfList/Memento PVe-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.palko.tk.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Memento PVe";
 				WRAPPER_EXTENSION = app;
 			};
@@ -535,6 +538,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "NatinfListTests/Memento PVeTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.palko.tk.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Memento PVeTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memento PVe.app/Memento PVe";
 				WRAPPER_EXTENSION = xctest;
@@ -553,6 +557,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NatinfList/NatinfList-Prefix.pch";
 				INFOPLIST_FILE = "NatinfListTests/Memento PVeTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.palko.tk.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Memento PVeTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memento PVe.app/Memento PVe";
 				WRAPPER_EXTENSION = xctest;
