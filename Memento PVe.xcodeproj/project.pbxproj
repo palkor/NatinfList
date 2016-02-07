@@ -31,7 +31,6 @@
 		18F0FAF9197993FE00E6E7FA /* License.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F0FAF8197993FE00E6E7FA /* License.png */; };
 		50342BFF1B21A962009C9416 /* pen.png in Resources */ = {isa = PBXBuildFile; fileRef = 50342BFE1B21A962009C9416 /* pen.png */; };
 		50342C071B21B1C1009C9416 /* CalculetteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50342C061B21B1C1009C9416 /* CalculetteViewController.m */; };
-		504325E81B134CBF001B9464 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 504325E71B134CBF001B9464 /* Entitlements.plist */; };
 		504C31B219866C2900117918 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504C31B119866C2900117918 /* MessageUI.framework */; };
 		505C309E19890296001ACEC5 /* GSBorderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 505C309D19890296001ACEC5 /* GSBorderLabel.m */; };
 		506D02051985994600387F4B /* AproposViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506D02041985994600387F4B /* AproposViewController.m */; };
@@ -89,7 +88,6 @@
 		50342BFE1B21A962009C9416 /* pen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pen.png; sourceTree = "<group>"; };
 		50342C051B21B1C1009C9416 /* CalculetteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculetteViewController.h; sourceTree = "<group>"; };
 		50342C061B21B1C1009C9416 /* CalculetteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculetteViewController.m; sourceTree = "<group>"; };
-		504325E71B134CBF001B9464 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		504C31B119866C2900117918 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		505C309C19890296001ACEC5 /* GSBorderLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSBorderLabel.h; sourceTree = "<group>"; };
 		505C309D19890296001ACEC5 /* GSBorderLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSBorderLabel.m; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 		18F0FAB51979835000E6E7FA = {
 			isa = PBXGroup;
 			children = (
-				504325E71B134CBF001B9464 /* Entitlements.plist */,
 				18F0FAC71979835000E6E7FA /* NatinfList */,
 				18F0FAE61979835100E6E7FA /* NatinfListTests */,
 				18F0FAC01979835000E6E7FA /* Frameworks */,
@@ -329,7 +326,6 @@
 				50E1F2B51B17B392008FB78A /* vitesse.gif in Resources */,
 				18F0FADA1979835000E6E7FA /* Images.xcassets in Resources */,
 				18F0FAF7197993CF00E6E7FA /* Folder.png in Resources */,
-				504325E81B134CBF001B9464 /* Entitlements.plist in Resources */,
 				18F0FACC1979835000E6E7FA /* InfoPlist.strings in Resources */,
 				189E9E44197A6211005BFCD3 /* natinfdb.plist in Resources */,
 				18AB701C197E84010094D7ED /* Gear.png in Resources */,
@@ -431,10 +427,9 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
-				COPY_PHASE_STRIP = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -472,9 +467,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -496,6 +490,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NatinfList/Memento PVe-Prefix.pch";
 				INFOPLIST_FILE = "NatinfList/Memento PVe-Info.plist";
@@ -512,6 +507,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NatinfList/Memento PVe-Prefix.pch";
 				INFOPLIST_FILE = "NatinfList/Memento PVe-Info.plist";
@@ -574,7 +570,7 @@
 				18F0FAEF1979835100E6E7FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		18F0FAF01979835100E6E7FA /* Build configuration list for PBXNativeTarget "Memento PVe" */ = {
 			isa = XCConfigurationList;
@@ -583,7 +579,7 @@
 				18F0FAF21979835100E6E7FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		18F0FAF31979835100E6E7FA /* Build configuration list for PBXNativeTarget "Memento PVeTests" */ = {
 			isa = XCConfigurationList;
@@ -592,7 +588,7 @@
 				18F0FAF51979835100E6E7FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
