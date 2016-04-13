@@ -15,4 +15,6 @@
 - (IBAction)sendMail:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *labelApropos;
 
+@property (weak, nonatomic) IBOutlet UIView *viewBackLabel;
+
 @end

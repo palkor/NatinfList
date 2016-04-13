@@ -39,20 +39,20 @@
     
     if ([categorie  isEqual: @"Stationnement"]) {
         
-        UIImage *image = [UIImage imageNamed:@"stationnement.gif" inBundle:nil compatibleWithTraitCollection:nil];
+        UIImage *image = [UIImage imageNamed:@"stationnement.png" inBundle:nil compatibleWithTraitCollection:nil];
          _imgView.image = image;
     
     }
     else if ([categorie isEqual:@"Autre"]) {
         
-        UIImage *image = [UIImage imageNamed:@"autre.png" inBundle:nil compatibleWithTraitCollection:nil];
+        UIImage *image = [UIImage imageNamed:@"divers.png" inBundle:nil compatibleWithTraitCollection:nil];
         _imgView.image = image;
         
     }
     
     else {
         
-        UIImage *image = [UIImage imageNamed:@"vitesse.gif" inBundle:nil compatibleWithTraitCollection:nil];
+        UIImage *image = [UIImage imageNamed:@"vitesse_fixe.png" inBundle:nil compatibleWithTraitCollection:nil];
         _imgView.image = image;
     }
     

@@ -137,6 +137,7 @@
 
 - (IBAction)valueChange:(id)sender {
     UISlider *valueSlider= (UISlider *) sender;
+    [valueSlider setContinuous:NO];
     NSInteger val = lround(valueSlider.value);
     _labelVitesseLimite.text = [NSString stringWithFormat:@"%i", (int)val];
     [self enregistreValeurVitesse:(int)val];

@@ -28,27 +28,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _viewBackLabel.layer.borderColor = [UIColor colorWithRed:0.024f green:0.478f blue:0.710f alpha:1.00f].CGColor;
+    _viewBackLabel.layer.borderWidth = 3.0;
   
-    _labelApropos.layer.borderColor =[UIColor colorWithRed:0.024f green:0.478f blue:0.710f alpha:1.00f].CGColor;
-    _labelApropos.layer.borderWidth = 3.0;
+    
+   // _labelApropos.layer.borderColor =[UIColor colorWithRed:0.024f green:0.478f blue:0.710f alpha:1.00f].CGColor;
+   // _labelApropos.layer.borderWidth = 3.0;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+   }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 
 - (IBAction)sendMail:(id)sender {
@@ -130,9 +123,6 @@
     
 }
 
-// Custom Label
 
-
-//// Oval drawing
 
 @end
