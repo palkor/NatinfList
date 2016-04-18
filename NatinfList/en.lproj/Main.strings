@@ -1,0 +1,102 @@
+
+/* Class = "UILabel"; text = "Montant amende majoré:"; ObjectID = "0yu-jP-4eS"; */
+"0yu-jP-4eS.text" = "Montant amende majoré:";
+
+/* Class = "UILabel"; text = "Vitesse enregistrée"; ObjectID = "3r4-z8-VCM"; */
+"3r4-z8-VCM.text" = "Vitesse enregistrée";
+
+/* Class = "UILabel"; text = "Recherche par code NATINF"; ObjectID = "5NK-UP-jil"; */
+"5NK-UP-jil.text" = "Recherche par code NATINF";
+
+/* Class = "UILabel"; text = "Infraction:"; ObjectID = "80E-p4-LDN"; */
+"80E-p4-LDN.text" = "Infraction:";
+
+/* Class = "UINavigationItem"; title = "Infraction"; ObjectID = "8pX-uQ-cWN"; */
+"8pX-uQ-cWN.title" = "Infraction";
+
+/* Class = "UILabel"; text = "LabelQualification"; ObjectID = "91A-YJ-uQf"; */
+"91A-YJ-uQf.text" = "LabelQualification";
+
+/* Class = "UINavigationItem"; title = "Calculette"; ObjectID = "9F1-yX-x2T"; */
+"9F1-yX-x2T.title" = "Calculette";
+
+/* Class = "UILabel"; text = "NATINF"; ObjectID = "A1Z-0I-9PT"; */
+"A1Z-0I-9PT.text" = "NATINF";
+
+/* Class = "UILabel"; text = "LabelAmendeMaj"; ObjectID = "MUg-LI-ihw"; */
+"MUg-LI-ihw.text" = "LabelAmendeMaj";
+
+/* Class = "UINavigationItem"; title = "A propos"; ObjectID = "RMZ-DD-RpE"; */
+"RMZ-DD-RpE.title" = "A propos";
+
+/* Class = "UILabel"; text = "LabelAmende"; ObjectID = "SLo-FH-B80"; */
+"SLo-FH-B80.text" = "LabelAmende";
+
+/* Class = "UILabel"; text = "Catégorie:"; ObjectID = "SPd-Rd-loi"; */
+"SPd-Rd-loi.text" = "Catégorie:";
+
+/* Class = "UINavigationItem"; title = "Détail"; ObjectID = "VV2-G3-ThW"; */
+"VV2-G3-ThW.title" = "Détail";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "Vt4-so-Ica"; */
+"Vt4-so-Ica.text" = "0";
+
+/* Class = "UITabBarItem"; title = "NATINF"; ObjectID = "XCs-2w-LvH"; */
+"XCs-2w-LvH.title" = "NATINF";
+
+/* Class = "UINavigationItem"; title = "Réglages"; ObjectID = "Z6b-Hz-6ql"; */
+"Z6b-Hz-6ql.title" = "Réglages";
+
+/* Class = "UILabel"; text = "Vitesse retenue"; ObjectID = "asv-zq-Sgy"; */
+"asv-zq-Sgy.text" = "Vitesse retenue";
+
+/* Class = "UILabel"; text = "APPLICATION: Memento PVe permet de rechercher une infraction parmi l'ensemble du référentiel de la base de données de PVe.  RÉALISATION:  Application réalisée par Pascal ORMANCEY.     Pour toutes remarques ou observations merci de me contacter."; ObjectID = "bL1-0R-Pul"; */
+"bL1-0R-Pul.text" = "APPLICATION: Memento PVe permet de rechercher une infraction parmi l'ensemble du référentiel de la base de données de PVe.  RÉALISATION:  Application réalisée par Pascal ORMANCEY.     Pour toutes remarques ou observations merci de me contacter.";
+
+/* Class = "UITabBarItem"; title = "A propos"; ObjectID = "eCh-cP-QwX"; */
+"eCh-cP-QwX.title" = "A propos";
+
+/* Class = "UILabel"; text = "Retrait de point:"; ObjectID = "eIZ-0b-YGq"; */
+"eIZ-0b-YGq.text" = "Retrait de point:";
+
+/* Class = "UILabel"; text = "LabelNatinf"; ObjectID = "exS-kh-VsG"; */
+"exS-kh-VsG.text" = "LabelNatinf";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fHm-Dv-cqb"; */
+"fHm-Dv-cqb.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Réglages"; ObjectID = "hDe-dP-EoA"; */
+"hDe-dP-EoA.title" = "Réglages";
+
+/* Class = "UILabel"; text = "Montant amende:"; ObjectID = "hds-Ko-ckU"; */
+"hds-Ko-ckU.text" = "Montant amende:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ljl-LK-eUE"; */
+"ljl-LK-eUE.text" = "Label";
+
+/* Class = "UILabel"; text = "Retrait de point"; ObjectID = "m5R-S7-AAl"; */
+"m5R-S7-AAl.text" = "Retrait de point";
+
+/* Class = "UIButton"; normalTitle = "Contacter le développeur"; ObjectID = "nNs-g4-J0X"; */
+"nNs-g4-J0X.normalTitle" = "Contacter le développeur";
+
+/* Class = "UILabel"; text = "LabelPoint"; ObjectID = "o59-t1-zBF"; */
+"o59-t1-zBF.text" = "LabelPoint";
+
+/* Class = "UILabel"; text = "NATINF:"; ObjectID = "pFL-aD-5XC"; */
+"pFL-aD-5XC.text" = "NATINF:";
+
+/* Class = "UILabel"; text = "LabelClasse"; ObjectID = "q7y-8H-RVx"; */
+"q7y-8H-RVx.text" = "LabelClasse";
+
+/* Class = "UILabel"; text = "Montant amende minoré:"; ObjectID = "rdR-i7-p5k"; */
+"rdR-i7-p5k.text" = "Montant amende minoré:";
+
+/* Class = "UILabel"; text = "Classe:"; ObjectID = "ro5-nw-zjO"; */
+"ro5-nw-zjO.text" = "Classe:";
+
+/* Class = "UITabBarItem"; title = "Calculette"; ObjectID = "ves-4D-VsK"; */
+"ves-4D-VsK.title" = "Calculette";
+
+/* Class = "UILabel"; text = "LabelAmendeMin"; ObjectID = "xtK-dr-KUK"; */
+"xtK-dr-KUK.text" = "LabelAmendeMin";
