@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
-#import "GSBorderLabel.h"
+//#import "GSBorderLabel.h"
 
 
 @interface AproposViewController : UIViewController <MFMailComposeViewControllerDelegate>

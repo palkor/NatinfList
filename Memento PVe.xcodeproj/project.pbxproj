@@ -36,6 +36,7 @@
 		508BEAF91AE7B9C600A8AC26 /* JALabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 508BEAF81AE7B9C600A8AC26 /* JALabel.m */; };
 		508CBDC31B25CA8400F19C74 /* slider_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 508CBDC21B25CA8400F19C74 /* slider_tab.png */; };
 		50C344B31987BD9C00933737 /* APRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C344B21987BD9C00933737 /* APRoundedButton.m */; };
+		50C41D831CC5156B0050373F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C41D821CC5156B0050373F /* LaunchScreen.storyboard */; };
 		50E12B011CBEDBAD00E79B90 /* License@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E12AFE1CBEDBAD00E79B90 /* License@2x.png */; };
 		50E12B021CBEDBAD00E79B90 /* pen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E12AFF1CBEDBAD00E79B90 /* pen@2x.png */; };
 		50E12B031CBEDBAD00E79B90 /* slider_tab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E12B001CBEDBAD00E79B90 /* slider_tab@2x.png */; };
@@ -95,6 +96,7 @@
 		508CBDC21B25CA8400F19C74 /* slider_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slider_tab.png; sourceTree = "<group>"; };
 		50C344B11987BD9C00933737 /* APRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRoundedButton.h; sourceTree = "<group>"; };
 		50C344B21987BD9C00933737 /* APRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRoundedButton.m; sourceTree = "<group>"; };
+		50C41D821CC5156B0050373F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50E12AFE1CBEDBAD00E79B90 /* License@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "License@2x.png"; sourceTree = "<group>"; };
 		50E12AFF1CBEDBAD00E79B90 /* pen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pen@2x.png"; sourceTree = "<group>"; };
 		50E12B001CBEDBAD00E79B90 /* slider_tab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider_tab@2x.png"; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				18F0FAD01979835000E6E7FA /* AppDelegate.h */,
 				18F0FAD11979835000E6E7FA /* AppDelegate.m */,
 				18F0FAD31979835000E6E7FA /* Main.storyboard */,
+				50C41D821CC5156B0050373F /* LaunchScreen.storyboard */,
 				506D02031985994600387F4B /* AproposViewController.h */,
 				506D02041985994600387F4B /* AproposViewController.m */,
 				18C50926197DAD0300D13D2F /* NatinfParametreViewController.h */,
@@ -281,11 +284,12 @@
 		18F0FAB61979835000E6E7FA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Pascal;
 				TargetAttributes = {
 					18F0FABD1979835000E6E7FA = {
 						DevelopmentTeam = 25XYB6Z2QJ;
+						ProvisioningStyle = Automatic;
 					};
 					18F0FADE1979835100E6E7FA = {
 						TestTargetID = 18F0FABD1979835000E6E7FA;
@@ -319,6 +323,7 @@
 				18F0FAF9197993FE00E6E7FA /* License.png in Resources */,
 				50E12B021CBEDBAD00E79B90 /* pen@2x.png in Resources */,
 				508CBDC31B25CA8400F19C74 /* slider_tab.png in Resources */,
+				50C41D831CC5156B0050373F /* LaunchScreen.storyboard in Resources */,
 				50E1F2B61B17B392008FB78A /* autre.png in Resources */,
 				50342BFF1B21A962009C9416 /* pen.png in Resources */,
 				18F0FADA1979835000E6E7FA /* Images.xcassets in Resources */,
@@ -421,15 +426,20 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -442,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -461,21 +471,26 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -488,10 +503,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 25XYB6Z2QJ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NatinfList/Memento PVe-Prefix.pch";
 				INFOPLIST_FILE = "NatinfList/Memento PVe-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.palko.tk.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Memento PVe";
 				PROVISIONING_PROFILE = "";
@@ -506,10 +522,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 25XYB6Z2QJ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NatinfList/Memento PVe-Prefix.pch";
 				INFOPLIST_FILE = "NatinfList/Memento PVe-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.palko.tk.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Memento PVe";
 				PROVISIONING_PROFILE = "";
